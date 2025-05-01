@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>My Portfolio</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<script>
+		tailwind.config = {
+			theme: {
+				extend: {
+					animation: {
+						fadeIn: "fadeIn 1s ease-out forwards",
+						flyIn: "flyIn 1s ease-out forwards",
+					},
+					keyframes: {
+						fadeIn: {
+							from: { opacity: 0 },
+							to: { opacity: 1 },
+						},
+						flyIn: {
+							from: { opacity: 0, transform: "translateY(40px)" },
+							to: { opacity: 1, transform: "translateY(0)" },
+						},
+					},
+				},
+			},
+		};
+	</script>
+	<style>
+		.fade-in-section {
+			opacity: 0;
+			transition: opacity 1s ease-out, transform 1s ease-out;
+		}
+		.animate-fadeIn {
+			animation: fadeIn 1s ease-out forwards;
+		}
+		.animate-flyIn {
+			animation: flyIn 1s ease-out forwards;
+		}
+	</style>
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+	<!-- Header -->
+	<header class="bg-white shadow fade-in-section" data-animate="flyIn">
+		<div class="container mx-auto px-4 py-4 flex justify-between items-center">
+			<h1 class="text-2xl font-bold text-blue-600 flex items-center gap-2">
+				<svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" stroke-width="2"
+					viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round"
+						d="M12 4.354a4 4 0 01.994 7.906A3.5 3.5 0 0112 20.5a3.5 3.5 0 01-.994-6.74 4 4 0 010-7.906z" />
+				</svg>
+				My Portfolio
+			</h1>
+			<nav class="space-x-4">
+				<a href="#about" class="hover:text-blue-600 transition">About</a>
+				<a href="#projects" class="hover:text-blue-600 transition">Projects</a>
+				<a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+			</nav>
+		</div>
+	</header>
+
+	<!-- Hero Section -->
+	<section class="bg-blue-600 text-white py-20 text-center fade-in-section" data-animate="flyIn">
+		<h2 class="text-4xl font-bold mb-4 fade-in-section" data-animate="fadeIn">Hi, I'm Vindicator Theone</h2>
+		<p class="text-lg fade-in-section" data-animate="fadeIn">A passionate software developer who loves building responsive websites and captivating apps</p>
+	</section>
+
+	<!-- About Section -->
+	<section id="about" class="py-16 bg-white fade-in-section" data-animate="flyIn">
+		<div class="container mx-auto px-4 text-center">
+			<h3 class="text-3xl font-bold mb-6 text-gray-800">About Me</h3>
+			<p class="text-gray-600 max-w-xl mx-auto">
+				I'm a self-taught web developer, application developer and game developer with a focus on creating beautiful, responsive user interfaces with proper data management, informative and secure applications and entertainingly thrilling games.
+				I specialize in HTML, CSS, Tailwind, React, JavaScript, NodeJS, C#, kotlin, python, Typescript, GDscript and Java and I love turning ideas into real-world apps and games.
+			</p>
+		</div>
+	</section>
+
+	<!-- Projects Section -->
+	<section id="projects" class="py-16 bg-gray-100 fade-in-section" data-animate="flyIn">
+		<div class="container mx-auto px-4 text-center">
+			<h3 class="text-3xl font-bold mb-10 text-gray-800">My Projects</h3>
+			<div class="grid md:grid-cols-3 gap-8">
+				<!-- Project Cards -->
+				<div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105 fade-in-section" data-animate="fadeIn">
+					<div class="mb-3 text-blue-600">
+						<svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M9.75 9.75L15 15m-1.5-7.5A3.75 3.75 0 1018 12a3.75 3.75 0 00-4.5-4.5z" />
+						</svg>
+					</div>
+					<h4 class="text-xl font-semibold mb-2">Project One</h4>
+					<p class="text-gray-600 mb-4">An Interactive website which i played a role in creating showcasing my backend and frontend abilities in all sections</p>
+					<a href="https://www.algoritic.com.ng" class="text-blue-600 hover:underline">View Project</a>
+				</div>
+				<div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105 fade-in-section" data-animate="fadeIn">
+					<div class="mb-3 text-blue-600">
+						<svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h7" />
+						</svg>
+					</div>
+					<h4 class="text-xl font-semibold mb-2">Project Two</h4>
+					<p class="text-gray-600 mb-4">A responsive blog platform which I can automatically upload blog posts by running a script I made</p>
+					<a href="https://www.newsflashlatest.wordpress.com" class="text-blue-600 hover:underline">View Project</a>
+				</div>
+				<div class="bg-white p-6 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105 fade-in-section" data-animate="fadeIn">
+					<div class="mb-3 text-blue-600">
+						<svg class="w-8 h-8 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+							<path stroke-linecap="round" stroke-linejoin="round" d="M12 8c1.5 0 4 2 4 4s-2.5 4-4 4-4-2-4-4 2.5-4 4-4zm0 10v2m0-18V2" />
+						</svg>
+					</div>
+					<h4 class="text-xl font-semibold mb-2">Project Three</h4>
+					<p class="text-gray-600 mb-4">An interactive portfolio page with animations.</p>
+					<a href="#Hero" class="text-blue-600 hover:underline">View Project</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- Contact Section -->
+	<section id="contact" class="py-16 bg-white fade-in-section" data-animate="flyIn">
+		<div class="container mx-auto px-4 text-center">
+			<h3 class="text-3xl font-bold mb-6 text-gray-800">Get In Touch</h3>
+			<p class="text-gray-600 mb-6">Have a project or want to work together? I'd love to hear from you.</p>
+			<a href="mailto:victorakande090@gmail.com"
+				class="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded hover:bg-blue-700 transition">
+				<svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2"
+					viewBox="0 0 24 24">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M16 12H8m0 0l4 4m-4-4l4-4" />
+				</svg>
+				Email Me
+			</a>
+		</div>
+		<div class="container mt-5 mx-auto px-4 text-center">
+		  <h3 class="text-3xl font-bold mb-6 text-gray-800">My Socials</h3>
+		  <a class="inline-flex items-center bg-blue-600 text-white rounded-full hover:bg-blue-700 transition text-2xl mr-10 px-5 py-3 w-23 h-23 mb-6" href="https://LinkedIn.com/in/davindicator">In </a>
+		  <a class="inline-flex items-center bg-black text-white rounded-full hover:bg-gray-200 transition text-2xl mr-10 px-5 py-3 w-23 h-23 mb-6" href="https://x.com/davindicator">X </a>
+		  <a class="inline-flex items-center bg-gray-700 text-white rounded-full hover:bg-gray-200 transition text-2xl px-5 py-3 w-23 h-23 mb-6" href="https://github.com/DavinDicator001">git</a> <br>
+		  <a class="inline-flex items-center bg-green-700 text-white rounded-full hover:bg-green-200 transition text-2xl px-3 py-3 w-23 h-23 mb-6" href="https://wa.me/2349051217349">Wa</a> 
+		</div>
+	</section>
+
+	<!-- Footer -->
+	<footer class="bg-gray-800 text-white text-center py-4 fade-in-section" data-animate="fadeIn">
+		<p>&copy; 2025 DavinDicator. All rights reserved.</p>
+	</footer>
+
+	<!-- Animation Scroll Observer -->
+	<script>
+		const observer = new IntersectionObserver((entries) => {
+			entries.forEach(entry => {
+				const el = entry.target;
+				if (entry.isIntersecting) {
+					el.classList.add(`animate-${el.dataset.animate}`);
+				} else {
+					el.classList.remove(`animate-${el.dataset.animate}`);
+				}
+			});
+		}, { threshold: 0.1 });
+
+		document.querySelectorAll('.fade-in-section').forEach(el => {
+			observer.observe(el);
+		});
+	</script>
+</body>
+</html>
