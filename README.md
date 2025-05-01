@@ -1,3 +1,3 @@
 # Portfolio
-This is my portfolio sitw which i shall be hosting on a free hosting site
-more info is within the site
+This is my portfolio site source code
+view the live site at https://davindicator.vercel.app
