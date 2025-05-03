@@ -5,40 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>My Portfolio</title>
 	<script src="https://cdn.tailwindcss.com"></script>
-	<script>
-		tailwind.config = {
-			theme: {
-				extend: {
-					animation: {
-						fadeIn: "fadeIn 1s ease-out forwards",
-						flyIn: "flyIn 1s ease-out forwards",
-					},
-					keyframes: {
-						fadeIn: {
-							from: { opacity: 0 },
-							to: { opacity: 1 },
-						},
-						flyIn: {
-							from: { opacity: 0, transform: "translateY(40px)" },
-							to: { opacity: 1, transform: "translateY(0)" },
-						},
-					},
-				},
-			},
-		};
-	</script>
-	<style>
-		.fade-in-section {
-			opacity: 0;
-			transition: opacity 1s ease-out, transform 1s ease-out;
-		}
-		.animate-fadeIn {
-			animation: fadeIn 1s ease-out forwards;
-		}
-		.animate-flyIn {
-			animation: flyIn 1s ease-out forwards;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
 </head>
 <body class="bg-gray-100 text-gray-800 font-sans">
 
@@ -54,9 +21,10 @@
 				My Portfolio
 			</h1>
 			<nav class="space-x-4">
-				<a href="#about" class="hover:text-blue-600 transition">About</a>
-				<a href="#projects" class="hover:text-blue-600 transition">Projects</a>
-				<a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+				<a href="#about" class="text-black hover:text-blue-600 transition hover:underline duration-300">About</a>
+				<a href="#projects" class="text-black hover:text-blue-600 transition hover:underline duration-300">Projects</a>
+				<a href="#contact" class="text-black hover:text-blue-600 transition hover:underline duration-300">Contact</a>
+				<a href="./gallery.html" class="text-black hover:text-blue-600 transition hover:underline duration-300">Gallery</a>
 			</nav>
 		</div>
 	</header>
@@ -134,10 +102,10 @@
 		</div>
 		<div class="container mt-5 mx-auto px-4 text-center">
 		  <h3 class="text-3xl font-bold mb-6 text-gray-800">My Socials</h3>
-		  <a class="inline-flex items-center bg-blue-600 text-white rounded-full hover:bg-blue-700 transition text-2xl mr-10 px-5 py-3 w-23 h-23 mb-6" href="https://LinkedIn.com/in/davindicator">In </a>
-		  <a class="inline-flex items-center bg-black text-white rounded-full hover:bg-gray-200 transition text-2xl mr-10 px-5 py-3 w-23 h-23 mb-6" href="https://x.com/davindicator">X </a>
-		  <a class="inline-flex items-center bg-gray-700 text-white rounded-full hover:bg-gray-200 transition text-2xl px-5 py-3 w-23 h-23 mb-6" href="https://github.com/DavinDicator001">git</a> <br>
-		  <a class="inline-flex items-center bg-green-700 text-white rounded-full hover:bg-green-200 transition text-2xl px-3 py-3 w-23 h-23 mb-6" href="https://wa.me/2349051217349">Wa</a> 
+		  <a class="inline-flex items-center bg-blue-600 text-white rounded-full hover:bg-blue-700 transition text-2xl mr-10 px-5 py-3 w-23 h-23 mb-6 shadow border border-black" href="https://LinkedIn.com/in/davindicator">In </a>
+		  <a class="inline-flex items-center bg-black text-white rounded-full hover:bg-gray-200 transition text-2xl mr-10 px-5 py-3 w-23 h-23 mb-6 shadow border border-black" href="https://x.com/davindicator">X </a>
+		  <a class="inline-flex items-center bg-gray-700 text-white rounded-full hover:bg-gray-200 transition text-2xl px-5 py-3 w-23 h-23 mb-6 shadow border border-black" href="https://github.com/DavinDicator001">git</a> <br>
+		  <a class="inline-flex items-center bg-green-700 text-white rounded-full hover:bg-green-200 transition text-2xl px-3 py-3 w-23 h-23 mb-6 shadow border border-black" href="https://wa.me/2349051217349">Wa</a> 
 		</div>
 	</section>
 
